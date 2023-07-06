@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>Xiaoran的窝</title>
   
   
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://blog.xiaoranyaa.xya/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://blog.xiaoranyaa.xya/"/>
   <updated>2023-07-04T16:19:06.407Z</updated>
-  <id>http://example.com/</id>
+  <id>https://blog.xiaoranyaa.xya/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>Xiaoran</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/undefined/4a17b156.html"/>
-    <id>http://example.com/undefined/4a17b156.html</id>
+    <link href="https://blog.xiaoranyaa.xya/undefined/4a17b156.html"/>
+    <id>https://blog.xiaoranyaa.xya/undefined/4a17b156.html</id>
     <published>2023-07-04T14:48:08.098Z</published>
     <updated>2023-07-04T16:19:06.407Z</updated>
     

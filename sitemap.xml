@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/categories/index.html</loc>
+    <loc>https://blog.xiaoranyaa.xya/about/index.html</loc>
     
     <lastmod>2023-07-06</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/index.html</loc>
+    <loc>https://blog.xiaoranyaa.xya/link/index.html</loc>
     
     <lastmod>2023-07-06</lastmod>
     
@@ -20,7 +20,25 @@
   </url>
   
   <url>
-    <loc>http://example.com/undefined/4a17b156.html</loc>
+    <loc>https://blog.xiaoranyaa.xya/categories/index.html</loc>
+    
+    <lastmod>2023-07-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.xiaoranyaa.xya/tags/index.html</loc>
+    
+    <lastmod>2023-07-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.xiaoranyaa.xya/undefined/4a17b156.html</loc>
     
     <lastmod>2023-07-04</lastmod>
     
@@ -30,7 +48,7 @@
   
 
   <url>
-    <loc>http://example.com/</loc>
+    <loc>https://blog.xiaoranyaa.xya/</loc>
     <lastmod>2023-07-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
