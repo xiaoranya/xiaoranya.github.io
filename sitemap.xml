@@ -37,19 +37,10 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://blog.xiaoranyaa.xya/undefined/4a17b156.html</loc>
-    
-    <lastmod>2023-07-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>https://blog.xiaoranyaa.xya/</loc>
-    <lastmod>2023-07-06</lastmod>
+    <lastmod>2023-07-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
