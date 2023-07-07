@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Xiaoran的窝</title>
+  
+  
+  <link href="https://blog.xiaoranyaa.xya/atom.xml" rel="self"/>
+  
+  <link href="https://blog.xiaoranyaa.xya/"/>
+  <updated>2023-07-07T05:18:34.533Z</updated>
+  <id>https://blog.xiaoranyaa.xya/</id>
+  
+  <author>
+    <name>Xiaoran</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo全流程搭建记录</title>
+    <link href="https://blog.xiaoranyaa.xya/posts/9b2181f4.html"/>
+    <id>https://blog.xiaoranyaa.xya/posts/9b2181f4.html</id>
+    <published>2023-07-07T05:18:31.000Z</published>
+    <updated>2023-07-07T05:18:34.533Z</updated>
+    
+    <content type="html"><![CDATA[<p>逛了太多其他人的博客，有了一个自己也建一个的冲动，于是这个博客便诞生了。<br>在这里简单记录一下搭建博客的过程，希望能帮到后来人一些忙。<br></p><h2 id="本地环境准备"><a href="#本地环境准备" class="headerlink" title="本地环境准备"></a>本地环境准备<br></h2><h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo<br></h3><p>首先下载<a href="https://nodejs.org/">node.js</a>，建议下载最新的LTS版本（由于服务器在国外，可能需要多线程下载器，不然速度会很慢）运行安装程序进行安装，直接默认就好。<img src="https://st.xiaoranyaa.xyz/Public/869b46bdc6e1843c6a46d3dc4ac96bd6.png" alt="image.png"><br><br>然后下载<a href="https://git-scm.com/downloads">Git</a>(同样可能需要多线程下载器)，不知道设置都是什么意思的话也默认就好。<img src="https://st.xiaoranyaa.xyz/Public/dc53a18e389c1c469ab898cb158cefaf.png" alt="image.png"><br><br>在部署Hexo前，我们需要为npm换源来加快下载速度，在终端中运行以下代码将npm源切换为淘宝源。<br></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npmmirror.com</span><br></pre></td></tr></table></figure><p>然后在电脑中新建一个目录用于存储Hexo，右键在这个目录中打开终端，运行以下代码。<br></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure><p>等待输出完成后，我们就成功的将Hexo安装到自己的电脑上了！<br>可以在目录里运行下面的指令来查看我们的博客。<br></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g         <span class="comment">#生成文件</span></span><br><span class="line">hexo s         <span class="comment">#启动本地服务端</span></span><br></pre></td></tr></table></figure><h3 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题<br></h3><p>虽然我们已经成功安装了Hexo，但是Hexo默认的主题是这样的：<img src="https://st.xiaoranyaa.xyz/Public/5c0ab62b3f98efec5e5d0ecf62d18607.png" alt="image.png"><br><br>和其他人的博客差距有点大有没有，那是因为Hexo是可以更换主题的。<br>你可以去<a href="https://hexo.io/themes/">Hexo主题</a>寻找自己喜欢的主题，也可以直接在网上搜索其他人推荐的主题。<br>我这里使用的Butterfly，关于Butterfly主题的配置会另外写一篇文章。<br>需要注意，不同的主题有不同的配置方法，一般可以通过主题的官方渠道了解。<br><br>安装完主题以后，记得修改_config.yml中的theme。<br></p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">butterfly</span></span><br></pre></td></tr></table></figure><h2 id="部署到网页服务"><a href="#部署到网页服务" class="headerlink" title="部署到网页服务"></a>部署到网页服务<br></h2><h3 id="注册GitHub"><a href="#注册GitHub" class="headerlink" title="注册GitHub"></a>注册GitHub<br></h3><p>前往<a href="https://github.com/">Github官网</a>注册一个账号，完成后回到首页，点击 <strong>+</strong> —— <strong>New repository</strong> 新建项目。<img src="https://st.xiaoranyaa.xyz/Public/2c2fcbc7ac98f65140df4fb62e2c61ea.png" alt="image.png"><br><br>Repository name填写 <strong>你的GitHub名称.github.io</strong> ，公开度选择<strong>Public</strong>。<br></p><h3 id="推送到GitHub"><a href="#推送到GitHub" class="headerlink" title="推送到GitHub"></a>推送到GitHub<br></h3><p>首先配置你的Git，user.name填写你的昵称，user.email填写你的邮箱地址，记得替换。<br></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;yourname&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;youremail@xxx.xxx&quot;</span></span><br></pre></td></tr></table></figure><p>生成ssh密钥，同样需要替换邮箱地址。<br></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;youremail@XXX.xxx&quot;</span></span><br></pre></td></tr></table></figure><p>找到你的 id_rsa.pub 文件，如果你用的是Windows系统，那么它通常在 <strong>C:\Users\youruser\.ssh</strong>中<br>将youruser替换成你电脑的用户名。<br>打开这个文件，并全选复制。<br>打开Github你的项目库，点击<strong>Settings-Deploy keys-Add deploy key</strong>添加你的ssh密钥（即刚才复制的id_rsa.pub文件中的内容），title填写<strong>HEXO_DEPLOY_PUB</strong>，密钥填写你的密钥，勾选Allow write access，完成后点击Add Key。<img src="https://st.xiaoranyaa.xyz/Public/f81633d524c138987c7e22296163a113.png" alt="image.png"><br><br>点击Code回到代码页，点击绿色的<strong>Code-SSH</strong>复制你的SSH链接。<img src="https://st.xiaoranyaa.xyz/Public/607b6af77c31839c9ccc64da2064cca0.png" alt="image.png"><br><br>编辑Hexo的 <strong>_config.yml</strong>，保存你的SSH链接。<br></p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repository:</span> </span><br><span class="line"><span class="attr">github:</span> <span class="string">你的GitHub</span> <span class="string">SSH链接</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure><h3 id="启动GitHub-Pages（与下面一条二选一）"><a href="#启动GitHub-Pages（与下面一条二选一）" class="headerlink" title="启动GitHub Pages（与下面一条二选一）"></a>启动GitHub Pages（与下面一条二选一）<br></h3><p>GitHub Pages的速度并不算快，但如果你的要求并不算高，也还是够用的，这里简单说一下。<br>在你的库页面点击<strong>Settings-Pages</strong>打开甚至页面，Source选择<strong>Deploy from a branch</strong>，Branch选择<strong>master</strong>，点击Save。<img src="https://st.xiaoranyaa.xyz/Public/372b8339555fa83951a5601f5e526864.png" alt="image.png"><br><br>等待一会就可以从你设置的<strong>xxx.github.io</strong>进入。<br></p><h3 id="使用Netlify进行网页托管（与上面一条二选一）"><a href="#使用Netlify进行网页托管（与上面一条二选一）" class="headerlink" title="使用Netlify进行网页托管（与上面一条二选一）"></a>使用Netlify进行网页托管（与上面一条二选一）<br></h3><p>由于Github Pages的速度问题，我最后选择了使用Netlify进行网页托管。<a href="htps://app.netlify.com">Netlify官网</a><br>注意：Netlify有每月100G的流量限制，但是只要不被刷，正常使用是完全够用的。<br>首先注册一个账号，选择免费方案，然后点击<strong>Add New Site</strong>，点击<strong>Import an existing project</strong>，之后点击Deploy with GitHub，就会弹出一个授权窗口，将你的库授权给Netlify，然后点击你的库。<img src="https://st.xiaoranyaa.xyz/Public/721ca583503a80f7836dc0186b681eff.png" alt="image.png"><br><br>然后直接下拉点击Deploy完成创建，Netlify会自动进行构建，完成后可通过Netlify分配的二级域名直接访问，不过更建议绑定自己的域名。<br></p><h3 id="绑定你自己的域名（可选）"><a href="#绑定你自己的域名（可选）" class="headerlink" title="绑定你自己的域名（可选）"></a>绑定你自己的域名（可选）<br></h3><p>如果你已经有一个域名，可以直接前往控制台绑定。如果你没有，则需要先购买一个。域名注册商太多了，这里就不细说了。这里的绑定以Netlify为例<br><br>在Netlify你的网站界面点击<strong>Site configuration-Domain management-Domains-Add domain alias</strong>，输入准备为网站分配的域名，点击Save。<img src="https://st.xiaoranyaa.xyz/Public/5e4844dca8fb6789cb743627e8429cbe.png" alt="image.png"><br><br>完成后点击右侧感叹号，复制CNAME右边的那个网址，打开你注册的域名的控制台，添加一条解析。主机记录填写<strong>你分配的二级域名</strong>（就是最前面那一位），记录类型选择<strong>CNAME</strong>，记录值填写<strong>你复制的网址</strong>，其他默认。<img src="https://st.xiaoranyaa.xyz/Public/d44959acbe69de737109bce769092fa1.png" alt="image.png"><br><br>完成后刷新Netlify控制台，Netlify会自动为你配置免费SSL证书，域名就绑定完毕了。</p><h2 id="配置图床"><a href="#配置图床" class="headerlink" title="配置图床"></a>配置图床<br></h2><p>几乎所有的免费静态网页托管网站都会有流量限制，而且这些服务都在国外速度较慢，如果将图片都保存在本地，一篇文章里有很多图片的话将会成为灾难。这时候就是图床发挥作用的时候了。<br></p><h3 id="什么是图床"><a href="#什么是图床" class="headerlink" title="什么是图床"></a>什么是图床<br></h3><p>简单地说，图床就是专门保存图片的地方，Hexo使用markdown进行书写，而markdown是支持图片以链接形式插入图片的，所以我们就可以把图片放在另外一台服务器上，来减轻网页服务的负载，加快访问速度。搭建图床的方法有很多，之前比较流行的是GitHub+JsDeliver的组合，但是目前JsDeliver无法正常访问了，于是我便没有采用这个方案。<br>其他方案有：各家云服务厂商的对象存储（速度快，稳定，但要付费，消费并不多）<br>                     Gitee部署图床（速度快但是有很大的概率被封掉）<br>                     网盘获取直链作为图床（速度看网盘的速度，难度大，目前我使用的方案）<br>                     自行搭建图床（购买云服务器或者使用带公网的NAS，使用NAS有安全性问题）<br><br>关于如何搭建图床会另外写一篇文章<br></p><h3 id="如何使用图床"><a href="#如何使用图床" class="headerlink" title="如何使用图床"></a>如何使用图床<br></h3><p>配置得当的话，使用图床并不会给你增加麻烦，可以和一般编辑流程相同。<br>首先在电脑上下载<a href="https://github.com/Molunerfinn/PicGo/releases">Picgo</a>，一般选择下载x64架构。<img src="https://st.xiaoranyaa.xyz/Public/16b8a80c577d3a37ab18a9b638ddf7db.png" alt="image.png"><br><br>完成Picgo的图床配置后安装一个支持Picgo的编辑器，我这里使用的<a href="https://obsidian.md/">Obsidian</a>，下载安装完成后打开，选择<strong>设置-第三方插件-关闭安全模式</strong>，然后在社区插件市场选择浏览，搜索Picgo，点击安装，启用。<img src="https://st.xiaoranyaa.xyz/Public/499814ad02ad5dedbd8207563cf56e47.png" alt="image.png"><br><br>之后在写作时同时打开编辑器和Picgo，向文章内复制图片时会自动将图片上传并添加图片链接。<br><br>先写这么多吧，下篇会介绍评论区的设置和一些比较杂乱的内容。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;逛了太多其他人的博客，有了一个自己也建一个的冲动，于是这个博客便诞生了。&lt;br&gt;在这里简单记录一下搭建博客的过程，希望能帮到后来人一些忙。&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&quot;本地环境准备&quot;&gt;&lt;a href=&quot;#本地环境准备&quot; class=&quot;headerlink&quot; title=</summary>
+      
+    
+    
+    
+    <category term="技术" scheme="https://blog.xiaoranyaa.xya/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="Hexo" scheme="https://blog.xiaoranyaa.xya/tags/Hexo/"/>
+    
+    <category term="博客" scheme="https://blog.xiaoranyaa.xya/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="记录" scheme="https://blog.xiaoranyaa.xya/tags/%E8%AE%B0%E5%BD%95/"/>
+    
+    <category term="技术" scheme="https://blog.xiaoranyaa.xya/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+</feed>
