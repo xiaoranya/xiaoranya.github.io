@@ -10,5 +10,5 @@ Disallow: /images/
 Disallow: /img/
 Disallow: /lib/
 
-Sitemap: https://XXXXXXXXXXX.XXX/sitemap.xml
-Sitemap: https://XXXXXXXXXXX.XXX/baidusitemap.xml
+Sitemap: https://blog.xiaoranyaa.xyz/sitemap.xml
+Sitemap: https://blog.xiaoranyaa.xyz/baidusitemap.xml
