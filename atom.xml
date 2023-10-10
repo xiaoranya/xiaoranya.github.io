@@ -6,7 +6,7 @@
   <link href="https://blog.xiaoranyaa.xya/atom.xml" rel="self"/>
   
   <link href="https://blog.xiaoranyaa.xya/"/>
-  <updated>2023-10-08T13:45:46.073Z</updated>
+  <updated>2023-10-10T07:28:41.245Z</updated>
   <id>https://blog.xiaoranyaa.xya/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>发点照片</title>
+    <link href="https://blog.xiaoranyaa.xya/posts/1a211c4.html"/>
+    <id>https://blog.xiaoranyaa.xya/posts/1a211c4.html</id>
+    <published>2023-10-10T05:18:31.000Z</published>
+    <updated>2023-10-10T07:28:41.245Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://cn-sy1.rains3.com/sekai/Public/1696922885894.jpg" alt="6ab919d0a1fe4cdc5023d8963ba8281.jpg"><br><img src="https://cn-sy1.rains3.com/sekai/Public/1696922892495.jpg" alt="60ee78bf6c0f81fcb9814b44335ba2e.jpg"><br><img src="https://cn-sy1.rains3.com/sekai/Public/1696922869973.jpg" alt="f2b746efa0edc0b11c64a0f6bac0e0e.jpg"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cn-sy1.rains3.com/sekai/Public/1696922885894.jpg&quot; alt=&quot;6ab919d0a1fe4cdc5023d8963ba8281.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://cn-sy</summary>
+      
+    
+    
+    
+    <category term="生活" scheme="https://blog.xiaoranyaa.xya/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="图片" scheme="https://blog.xiaoranyaa.xya/tags/%E5%9B%BE%E7%89%87/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo全流程搭建记录</title>
